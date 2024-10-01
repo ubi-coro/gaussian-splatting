@@ -1,17 +1,20 @@
 # 3D Gaussian Splatting for Real-Time Radiance Field Rendering
-Bernhard Kerbl*, Georgios Kopanas*, Thomas Leimkühler, George Drettakis (* indicates equal contribution)<br>
-| [Webpage](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/) | [Full Paper](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/3d_gaussian_splatting_high.pdf) | [Video](https://youtu.be/T_kXY43VZnk) | [Other GRAPHDECO Publications](http://www-sop.inria.fr/reves/publis/gdindex.php) | [FUNGRAPH project page](https://fungraph.inria.fr) |<br>
-| [T&T+DB COLMAP (650MB)](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/datasets/input/tandt_db.zip) | [Pre-trained Models (14 GB)](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/datasets/pretrained/models.zip) | [Viewers for Windows (60MB)](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/binaries/viewers.zip) | [Evaluation Images (7 GB)](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/evaluation/images.zip) |<br>
+
+Bernhard Kerbl*, Georgios Kopanas*, Thomas Leimkühler, George Drettakis 
+*(indicates equal contribution)*
+
+[![Webpage](https://img.shields.io/badge/webpage-0180A3)](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/) [![Full Paper](https://img.shields.io/badge/full_paper-0180A3)](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/3d_gaussian_splatting_high.pdf) [![Video](https://img.shields.io/badge/video-0180A3)](https://youtu.be/T_kXY43VZnk) [![other GRAPHDECO publications](https://img.shields.io/badge/other_GRAPHDECO_publications-0180A3)](http://www-sop.inria.fr/reves/publis/gdindex.php) [![FUNGRAPH project page](https://img.shields.io/badge/FUNGRAPH_project_page-0180A3)](https://fungraph.inria.fr)
+[![T&T+DB COLMAP (650MB)](https://img.shields.io/badge/T&T+DB_COLMAP_(650MB)-0180A3)](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/datasets/input/tandt_db.zip) [![Pre-trained Models (14 GB)](https://img.shields.io/badge/pre--trained_models_(14GB)-0180A3)](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/datasets/pretrained/models.zip) [![Viewers for Windows (60MB)](https://img.shields.io/badge/viewers_for_Windows_(60MB)-0180A3)](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/binaries/viewers.zip) [![Evaluation Images (7 GB)](https://img.shields.io/badge/evaluation_images_(7GB)-0180A3)](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/evaluation/images.zip)
+
 ![Teaser image](assets/teaser.png)
 
-This repository contains the official authors implementation associated with the paper "3D Gaussian Splatting for Real-Time Radiance Field Rendering", which can be found [here](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/). We further provide the reference images used to create the error metrics reported in the paper, as well as recently created, pre-trained models. 
+This repository contains the official authors implementation associated with the paper [3D Gaussian Splatting for Real-Time Radiance Field Rendering](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/). We further provide the reference images used to create the error metrics reported in the paper, as well as recently created, pre-trained models. 
 
-<a href="https://www.inria.fr/"><img height="100" src="assets/logo_inria.png"> </a>
-<a href="https://univ-cotedazur.eu/"><img height="100" src="assets/logo_uca.png"> </a>
-<a href="https://www.mpi-inf.mpg.de"><img height="100" src="assets/logo_mpi.png"> </a> 
-<a href="https://team.inria.fr/graphdeco/"> <img style="width:100%;" src="assets/logo_graphdeco.png"></a>
+<a href="https://www.inria.fr/"><img height="100" src="assets/logo_inria.png"></a><a href="https://univ-cotedazur.eu/"><img height="100" src="assets/logo_uca.png"></a>
+<a href="https://www.mpi-inf.mpg.de"><img height="100" src="assets/logo_mpi.png"></a><a href="https://team.inria.fr/graphdeco/"><img height="70" src="assets/logo_graphdeco.png"></a>
 
-Abstract: *Radiance Field methods have recently revolutionized novel-view synthesis of scenes captured with multiple photos or videos. However, achieving high visual quality still requires neural networks that are costly to train and render, while recent faster methods inevitably trade off speed for quality. For unbounded and complete scenes (rather than isolated objects) and 1080p resolution rendering, no current method can achieve real-time display rates. We introduce three key elements that allow us to achieve state-of-the-art visual quality while maintaining competitive training times and importantly allow high-quality real-time (≥ 30 fps) novel-view synthesis at 1080p resolution. First, starting from sparse points produced during camera calibration, we represent the scene with 3D Gaussians that preserve desirable properties of continuous volumetric radiance fields for scene optimization while avoiding unnecessary computation in empty space; Second, we perform interleaved optimization/density control of the 3D Gaussians, notably optimizing anisotropic covariance to achieve an accurate representation of the scene; Third, we develop a fast visibility-aware rendering algorithm that supports anisotropic splatting and both accelerates training and allows realtime rendering. We demonstrate state-of-the-art visual quality and real-time rendering on several established datasets.*
+### ABSTRACT
+> Radiance Field methods have recently revolutionized novel-view synthesis of scenes captured with multiple photos or videos. However, achieving high visual quality still requires neural networks that are costly to train and render, while recent faster methods inevitably trade off speed for quality. For unbounded and complete scenes (rather than isolated objects) and 1080p resolution rendering, no current method can achieve real-time display rates. We introduce three key elements that allow us to achieve state-of-the-art visual quality while maintaining competitive training times and importantly allow high-quality real-time (≥ 30 fps) novel-view synthesis at 1080p resolution. First, starting from sparse points produced during camera calibration, we represent the scene with 3D Gaussians that preserve desirable properties of continuous volumetric radiance fields for scene optimization while avoiding unnecessary computation in empty space; Second, we perform interleaved optimization/density control of the 3D Gaussians, notably optimizing anisotropic covariance to achieve an accurate representation of the scene; Third, we develop a fast visibility-aware rendering algorithm that supports anisotropic splatting and both accelerates training and allows realtime rendering. We demonstrate state-of-the-art visual quality and real-time rendering on several established datasets.
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
@@ -36,34 +39,31 @@ This research was funded by the ERC Advanced grant FUNGRAPH No 788065. The autho
 
 ## Step-by-step Tutorial
 
-Jonathan Stephens made a fantastic step-by-step tutorial for setting up Gaussian Splatting on your machine, along with instructions for creating usable datasets from videos. If the instructions below are too dry for you, go ahead and check it out [here](https://www.youtube.com/watch?v=UXtuigy_wYc).
+Jonathan Stephens made a fantastic [<img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" width="20" /> step-by-step tutorial](https://www.youtube.com/watch?v=UXtuigy_wYc) for setting up Gaussian Splatting on your machine, along with instructions for creating usable datasets from videos. If the instructions below are too dry for you, go ahead and check it out.
 
 ## Colab
 
-User [camenduru](https://github.com/camenduru) was kind enough to provide a Colab template that uses this repo's source (status: August 2023!) for quick and easy access to the method. Please check it out [here](https://github.com/camenduru/gaussian-splatting-colab).
+User [@camenduru](https://github.com/camenduru) was kind enough to provide a [Colab template](https://github.com/camenduru/gaussian-splatting-colab) that uses this repo's source (status: August 2023!) for quick and easy access to the method. Please check it out.
 
 ## Cloning the Repository
 
 The repository contains submodules, thus please check it out with 
 ```shell
 # SSH
-git clone git@github.com:graphdeco-inria/gaussian-splatting.git --recursive
-```
-or
-```shell
-# HTTPS
-git clone https://github.com/graphdeco-inria/gaussian-splatting --recursive
+git clone git@github.com:ubi-coro/gaussian-splatting.git --recursive
 ```
 
 ## Overview
 
 The codebase has 4 main components:
+
+- A script to help you turn your own images into optimization-ready SfM data sets
 - A PyTorch-based optimizer to produce a 3D Gaussian model from SfM inputs
 - A network viewer that allows to connect to and visualize the optimization process
-- An OpenGL-based real-time viewer to render trained models in real-time.
-- A script to help you turn your own images into optimization-ready SfM data sets
+- An OpenGL-based real-time viewer to render trained models in real-time
 
-The components have different requirements w.r.t. both hardware and software. They have been tested on Windows 10 and Ubuntu Linux 22.04. Instructions for setting up and running each of them are found in the sections below.
+> [!NOTE]
+> The components have different requirements w.r.t. both hardware and software. They have been tested on Windows 10 and Ubuntu Linux 22.04. Instructions for setting up and running each of them are found in the sections below.
 
 ## New features  [Please check regularly!]
 
