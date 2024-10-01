@@ -61,9 +61,8 @@ The codebase has 4 main components:
 | :-- | :-- |
 | [**1**](docs/process-scenes.md) | A script to help you turn your own images into optimization-ready SfM data sets |
 | [**2**](docs/optimizer.md) | A PyTorch-based optimizer to produce a 3D Gaussian model from SfM inputs |
-| [**3**](docs/viewers.md) | A network viewer that allows to connect to and visualize the optimization process |
-| **4** | An OpenGL-based real-time viewer to render trained models in real-time |
-| [**5**](docs/faq.md) | FAQ |
+| [**3**](docs/viewers.md) | A network viewer that allows to connect to and visualize the optimization process<br>An OpenGL-based real-time viewer to render trained models in real-time |
+| [**4**](docs/faq.md) | FAQ |
 
 > [!NOTE]
 > The components have different requirements w.r.t. both hardware and software. They have been tested on Windows 10 and Ubuntu Linux 22.04. Instructions for setting up and running each of them are found in the sections below.
