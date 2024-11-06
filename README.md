@@ -41,10 +41,10 @@ This research was funded by the ERC Advanced grant FUNGRAPH No 788065. The autho
 
 We have limited resources for maintaining and updating the code. However, we have added a few new features since the original release that are inspired by some of the excellent work many other researchers have been doing on 3DGS. We will be adding other features within the ability of our resources.
 
-**Update of October 2024**: We integrated [training speed acceleration](process-scenes.md#training-speed-acceleration) and made it compatible with [depth regularization](process-scenes.md#depth-regularization), [anti-aliasing](process-scenes.md#anti-aliasing) and [exposure compensation](process-scenes.md#exposure-compensation). We have enhanced the SIBR real time viewer by correcting bugs and adding features in the [Top View](process-scenes.md#sibr-top-view) that allows visualization of input and user cameras.
+**Update of October 2024**: We integrated [training speed acceleration](docs/process-scenes.md#training-speed-acceleration) and made it compatible with [depth regularization](docs/process-scenes.md#depth-regularization), [anti-aliasing](docs/process-scenes.md#anti-aliasing) and [exposure compensation](docs/process-scenes.md#exposure-compensation). We have enhanced the SIBR real time viewer by correcting bugs and adding features in the [Top View](docs/process-scenes.md#sibr-top-view) that allows visualization of input and user cameras.
 
 **Update of Spring 2024**:
-Orange Labs has kindly added [OpenXR support](process-scenes.md#openxr-support) for VR viewing. 
+Orange Labs has kindly added [OpenXR support](docs/process-scenes.md#openxr-support) for VR viewing. 
 
 ## Step-by-step Tutorial
 
